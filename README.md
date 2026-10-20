@@ -11,12 +11,12 @@ Este TP2 propone la evolución del sitio colaborativo Yoda Labs, originalmente d
 ## Integrantes
 
 - **Leonel Diaz** — [GitHub](https://github.com/LeonelDiaz225)
-- **Maximiliano Millan** — [GitHub](https://github.com/LeonelDiaz225)
-- **Itziar Urriola** — [GitHub](https://github.com/LeonelDiaz225)
-- **Melisa Solano** — [GitHub](https://github.com/LeonelDiaz225)
-- **Yohana Olivera** — [GitHub](https://github.com/LeonelDiaz225)
+- **Maximiliano Millan** — [GitHub](https://github.com/estoesplecto)
+- **Itziar Urriola** — [GitHub](https://github.com/itziarurriola)
+- **Melisa Solano** — [GitHub](https://github.com/melulu169)
+- **Yohana Olivera** — [GitHub](https://github.com/YohaOlivera)
 
-> El TP1 disponible en el repositorio identifica el repositorio grupal de GitHub, pero no contiene enlaces individuales para cada integrante.
+
 
 ## Declaración de uso de IA
 
