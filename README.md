@@ -6,7 +6,7 @@ Este TP2 propone la evolución del sitio colaborativo Yoda Labs, originalmente d
 
 ## Deploy
 
-https://frontend-tp-2-grupal.vercel.app/
+[DEPLOY](https://frontend-tp-2-grupal.vercel.app/)
 
 ## Integrantes
 
