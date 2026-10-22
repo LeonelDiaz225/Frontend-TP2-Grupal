@@ -1,22 +1,142 @@
 [
-  { "id": 1, "name": "React", "category": "Frontend", "description": "Biblioteca para construir interfaces declarativas.", "icon": "/img/icono-js.png" },
-  { "id": 2, "name": "React Router", "category": "Frontend", "description": "Navegación del lado del cliente para nuestra SPA.", "icon": "/img/icono-js.png" },
-  { "id": 3, "name": "Vite", "category": "Herramientas", "description": "Servidor de desarrollo y empaquetador rápido.", "icon": "/img/logo4.png" },
-  { "id": 4, "name": "JavaScript", "category": "Lenguajes", "description": "Lenguaje que da comportamiento a la aplicación.", "icon": "/img/icono-js.png" },
-  { "id": 5, "name": "HTML5", "category": "Frontend", "description": "Estructura semántica de cada vista.", "icon": "/img/icono-html5.png" },
-  { "id": 6, "name": "CSS3", "category": "Frontend", "description": "Estilos responsive e identidad visual galáctica.", "icon": "/img/icono-css3.png" },
-  { "id": 7, "name": "Git", "category": "Herramientas", "description": "Control de versiones para trabajar en equipo.", "icon": "/img/github-blanco.png" },
-  { "id": 8, "name": "GitHub", "category": "Herramientas", "description": "Repositorio y colaboración del equipo.", "icon": "/img/github-blanco.png" },
-  { "id": 9, "name": "useState", "category": "React", "description": "Manejo de búsqueda, filtros y estados de interfaz.", "icon": "/img/logo4.png" },
-  { "id": 10, "name": "useEffect", "category": "React", "description": "Sincronización con la API externa.", "icon": "/img/logo4.png" },
-  { "id": 11, "name": "JSON", "category": "Datos", "description": "Formato de los recursos locales del proyecto.", "icon": "/img/logo4.png" },
-  { "id": 12, "name": "Fetch API", "category": "Datos", "description": "Solicitud de información a servicios externos.", "icon": "/img/icono-js.png" },
-  { "id": 13, "name": "Componentes", "category": "React", "description": "Piezas reutilizables que forman la interfaz.", "icon": "/img/logo4.png" },
-  { "id": 14, "name": "Layout", "category": "Arquitectura", "description": "Contenedor que mantiene la Sidebar en toda la app.", "icon": "/img/logo4.png" },
-  { "id": 15, "name": "NavLink", "category": "React", "description": "Enlace con indicación visual de ruta activa.", "icon": "/img/logo4.png" },
-  { "id": 16, "name": "Responsive", "category": "Diseño", "description": "Adaptación para pantallas grandes y móviles.", "icon": "/img/logo-yodalabs.png" },
-  { "id": 17, "name": "UX", "category": "Diseño", "description": "Experiencia clara para recorrer la misión.", "icon": "/img/logo-yodalabs.png" },
-  { "id": 18, "name": "API pública", "category": "Datos", "description": "Fuente remota de publicaciones de ejemplo.", "icon": "/img/logo4.png" },
-  { "id": 19, "name": "SPA", "category": "Arquitectura", "description": "Aplicación de página única sin recargas completas.", "icon": "/img/logo4.png" },
-  { "id": 20, "name": "Accesibilidad", "category": "Diseño", "description": "Etiquetas y controles pensados para todas las personas.", "icon": "/img/logo-yodalabs.png" }
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "Biblioteca para construir interfaces declarativas.",
+    "icon": "/img/icono-js.png"
+  },
+  {
+    "id": 2,
+    "name": "React Router",
+    "category": "Frontend",
+    "description": "Navegación del lado del cliente para nuestra SPA.",
+    "icon": "/img/icono-js.png"
+  },
+  {
+    "id": 3,
+    "name": "Vite",
+    "category": "Herramientas",
+    "description": "Servidor de desarrollo y empaquetador rápido.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 4,
+    "name": "JavaScript",
+    "category": "Lenguajes",
+    "description": "Lenguaje que da comportamiento a la aplicación.",
+    "icon": "/img/icono-js.png"
+  },
+  {
+    "id": 5,
+    "name": "HTML5",
+    "category": "Frontend",
+    "description": "Estructura semántica de cada vista.",
+    "icon": "/img/icono-html5.png"
+  },
+  {
+    "id": 6,
+    "name": "CSS3",
+    "category": "Frontend",
+    "description": "Estilos responsive e identidad visual galáctica.",
+    "icon": "/img/icono-css3.png"
+  },
+  {
+    "id": 7,
+    "name": "Git",
+    "category": "Herramientas",
+    "description": "Control de versiones para trabajar en equipo.",
+    "icon": "/img/github-blanco.png"
+  },
+  {
+    "id": 8,
+    "name": "GitHub",
+    "category": "Herramientas",
+    "description": "Repositorio y colaboración del equipo.",
+    "icon": "/img/github-blanco.png"
+  },
+  {
+    "id": 9,
+    "name": "useState",
+    "category": "React",
+    "description": "Manejo de búsqueda, filtros y estados de interfaz.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 10,
+    "name": "useEffect",
+    "category": "React",
+    "description": "Sincronización con la API externa.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 11,
+    "name": "JSON",
+    "category": "Datos",
+    "description": "Formato de los recursos locales del proyecto.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 12,
+    "name": "Fetch API",
+    "category": "Datos",
+    "description": "Solicitud de información a servicios externos.",
+    "icon": "/img/icono-js.png"
+  },
+  {
+    "id": 13,
+    "name": "Componentes",
+    "category": "React",
+    "description": "Piezas reutilizables que forman la interfaz.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 14,
+    "name": "Layout",
+    "category": "Arquitectura",
+    "description": "Contenedor que mantiene la Sidebar en toda la app.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 15,
+    "name": "NavLink",
+    "category": "React",
+    "description": "Enlace con indicación visual de ruta activa.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 16,
+    "name": "Responsive",
+    "category": "Diseño",
+    "description": "Adaptación para pantallas grandes y móviles.",
+    "icon": "/img/logo-yodalabs.png"
+  },
+  {
+    "id": 17,
+    "name": "UX",
+    "category": "Diseño",
+    "description": "Experiencia clara para recorrer la misión.",
+    "icon": "/img/logo-yodalabs.png"
+  },
+  {
+    "id": 18,
+    "name": "API pública",
+    "category": "Datos",
+    "description": "Fuente remota de publicaciones de ejemplo.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 19,
+    "name": "SPA",
+    "category": "Arquitectura",
+    "description": "Aplicación de página única sin recargas completas.",
+    "icon": "/img/logo4.png"
+  },
+  {
+    "id": 20,
+    "name": "Accesibilidad",
+    "category": "Diseño",
+    "description": "Etiquetas y controles pensados para todas las personas.",
+    "icon": "/img/logo-yodalabs.png"
+  }
 ]
