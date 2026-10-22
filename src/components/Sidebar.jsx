@@ -13,8 +13,7 @@ function Sidebar() {
   return (
     <aside className="sidebar" aria-label="Navegación principal">
       <NavLink to="/" className="brand">
-        <img src="/img/logo4.png" alt="Yoda Labs" />
-        <span>YODA LABS</span>
+        <img src="/img/logo4.png" alt="Logo de Yoda Labs" />
       </NavLink>
 
       <p className="sidebar-label">Secciones de la misión</p>
