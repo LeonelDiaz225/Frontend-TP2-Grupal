@@ -1,50 +1,66 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import CharacterCard from "../components/CharacterCard";
 
 function ApiView() {
-  const [posts, setPosts] = useState([]);
+  const [character, setCharacter] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const controllerRef = useRef(null);
 
-  useEffect(() => {
+  const loadCharacter = useCallback((id) => {
+    controllerRef.current?.abort();
     const controller = new AbortController();
-    fetch("https://jsonplaceholder.typicode.com/posts?_limit=9", {
+    controllerRef.current = controller;
+    setLoading(true);
+    setError("");
+
+    fetch(`https://akabab.github.io/starwars-api/api/id/${id}.json`, {
       signal: controller.signal,
     })
       .then((response) => {
         if (!response.ok) throw new Error("API error");
         return response.json();
       })
-      .then(setPosts)
+      .then(setCharacter)
       .catch((requestError) => {
         if (requestError.name !== "AbortError") {
-          setError("No pudimos cargar los registros. Revisá tu conexión e intentá nuevamente.");
+          setError("No pudimos cargar el personaje. Revisá tu conexión e intentá nuevamente.");
         }
       })
-      .finally(() => setLoading(false));
-    return () => controller.abort();
+      .finally(() => {
+        if (!controller.signal.aborted) setLoading(false);
+      });
   }, []);
+
+  useEffect(() => {
+    loadCharacter(2);
+    return () => controllerRef.current?.abort();
+  }, [loadCharacter]);
+
+  const discoverCharacter = () => {
+    const randomId = Math.floor(Math.random() * 88) + 1;
+    loadCharacter(randomId);
+  };
 
   return (
     <section className="content-panel">
       <p className="eyebrow">TRANSMISIÓN // API EXTERNA</p>
-      <h1>Bitácora remota</h1>
+      <h1>Archivo galáctico</h1>
       <p className="panel-intro">
-        JSONPlaceholder aporta publicaciones de prueba para demostrar el consumo
-        de datos externos, la carga asíncrona y el manejo de errores dentro de la SPA.
+        Explora personajes de Star Wars y descubre sus características,
+        origen y afiliaciones.
       </p>
-      {loading && <p className="state-message">Cargando registros...</p>}
+      <button
+        className="button-primary"
+        type="button"
+        onClick={discoverCharacter}
+        disabled={loading}
+      >
+        {loading ? "Buscando en la galaxia..." : "Descubre quién eres"}
+      </button>
+      {loading && <p className="state-message">Cargando personaje...</p>}
       {error && <p className="state-message error">{error}</p>}
-      {!loading && !error && (
-        <div className="api-grid">
-          {posts.map((post) => (
-            <article className="api-card" key={post.id}>
-              <span>TRANSMISIÓN #{String(post.id).padStart(2, "0")}</span>
-              <h2>{post.title}</h2>
-              <p>{post.body}</p>
-            </article>
-          ))}
-        </div>
-      )}
+      {!loading && !error && character && <CharacterCard character={character} />}
     </section>
   );
 }
