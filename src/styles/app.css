@@ -299,6 +299,7 @@ a {
 .member-card img {
   width: 56px;
   height: 56px;
+  flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--member-color);
