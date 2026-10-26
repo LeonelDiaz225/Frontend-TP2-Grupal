@@ -230,7 +230,6 @@ a {
 }
 
 .button-primary {
-  margin-bottom: 1rem;
   border: 0;
   background: var(--green);
   color: #06100a;
