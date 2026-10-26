@@ -32,7 +32,7 @@ a {
   color: inherit;
 }
 
-/* CONTENEDOR PRINCIPAL: Clavado al alto de la pantalla */
+
 .app-shell {
   display: flex;
   height: 100vh;
@@ -40,7 +40,7 @@ a {
   overflow: hidden;
 }
 
-/* SIDEBAR: Anclado y con altura del 100% */
+
 .sidebar {
   width: 280px;
   flex: 0 0 280px;
@@ -149,7 +149,7 @@ a {
   box-shadow: 0 0 10px var(--green);
 }
 
-/* CONTENIDO PRINCIPAL: Activa el scroll independiente */
+
 .main-content {
   flex: 1;
   width: 100%;
@@ -711,7 +711,7 @@ a {
 }
 
 @media (max-width: 760px) {
-  /* Restablecemos el comportamiento normal en móviles */
+
   .app-shell {
     display: block;
     height: auto;
