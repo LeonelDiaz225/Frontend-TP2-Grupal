@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const members = [
   ["leonel", "Leonel Diaz", "Frontend / Arquitectura", "/img/yoda2.jpg", "#4da3ff"],
-  ["maximiliano", "Maximiliano Millan", "Frontend / Interacciones", "/img/yoda6.jpg", "#ff9900"],
+  ["maximiliano", "Maximiliano Millan", "Frontend / Interacciones", "/img/yoda10.jpg", "#ff9900"],
   ["itziar", "Itziar Urriola", "Diseño / Identidad", "/img/Yoda1.jpg", "#b266ff"],
-  ["melisa", "Melisa Solano", "Contenido / QA", "/img/yoda7.jpg", "#e63c3c"],
+  ["melisa", "Melisa Solano", "Contenido / QA", "/img/yoda6.jpg", "#e63c3c"],
   ["yohana", "Yohana Olivera", "Responsive / Contenido", "/img/yoda7.jpg", "#ff66b2"],
 ];
 
